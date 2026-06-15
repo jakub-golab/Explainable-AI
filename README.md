@@ -1,4 +1,6 @@
-# Ligand-Receptor Interaction Fingerprint Analysis
+# Explainable AI - metody wyjaśnialności w analizie kompleksów ligand-receptor
+
+### Authors: Yury Sarosek, Palina Posakh, Jakub Gołąb, Dorian Rząsa
 
 Machine learning classification and interpretability analysis of ProLIF structural interaction fingerprints for dopamine receptors **D2** and **D4**.
 
