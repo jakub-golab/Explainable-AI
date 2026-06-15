@@ -1,0 +1,535 @@
+{
+  "summaries": {
+    "d2": {
+      "receptor": "d2",
+      "n_samples": 6112,
+      "n_active": 3044,
+      "n_inactive": 3068,
+      "balance_ratio": 0.9921773142112125,
+      "n_features": 110,
+      "mean_interactions_per_sample": 16.364692408376964
+    },
+    "d4": {
+      "receptor": "d4",
+      "n_samples": 1514,
+      "n_active": 1036,
+      "n_inactive": 478,
+      "balance_ratio": 2.1673640167364017,
+      "n_features": 119,
+      "mean_interactions_per_sample": 13.41347424042272
+    }
+  },
+  "receptors": {
+    "d2": {
+      "best_model": "random_forest",
+      "cv_metrics": {
+        "random_forest": {
+          "accuracy": 0.6397256350927998,
+          "balanced_accuracy": 0.6397168428273885,
+          "f1": 0.6380429316526872,
+          "roc_auc": 0.6906804776323942
+        },
+        "logistic_l1": {
+          "accuracy": 0.5965329011726952,
+          "balanced_accuracy": 0.5964678546032809,
+          "f1": 0.5885724051844455,
+          "roc_auc": 0.6391971948162096
+        },
+        "xgboost": {
+          "accuracy": 0.6254912325544361,
+          "balanced_accuracy": 0.6255023295435681,
+          "f1": 0.6251036457421089,
+          "roc_auc": 0.6783085197090871
+        }
+      },
+      "imbalance_strategy": "none",
+      "cv_stability": {
+        "top_n": 15,
+        "n_folds": 5,
+        "core_residues_in_all_folds": [
+          "ASP114.A",
+          "HIS393.A",
+          "LEU94.A",
+          "PHE110.A",
+          "PHE189.A",
+          "PHE389.A",
+          "PHE390.A",
+          "TRP100.A",
+          "TRP386.A",
+          "TRP413.A",
+          "TYR408.A",
+          "TYR416.A",
+          "VAL115.A",
+          "VAL91.A"
+        ],
+        "n_core_residues": 14,
+        "mean_pairwise_jaccard": 0.925,
+        "min_pairwise_jaccard": 0.875,
+        "n_residues_in_all_folds": 14,
+        "hypothesis_supported": true
+      },
+      "fi_vs_shap": {
+        "fi_top": [
+          "ASP114.A",
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE110.A",
+          "PHE189.A",
+          "PHE389.A",
+          "PHE390.A",
+          "SER193.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TYR408.A",
+          "TYR416.A",
+          "VAL91.A"
+        ],
+        "shap_top": [
+          "ASP114.A",
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE189.A",
+          "PHE198.A",
+          "PHE389.A",
+          "PHE390.A",
+          "SER193.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TRP413.A",
+          "TYR408.A",
+          "VAL91.A"
+        ],
+        "overlap": [
+          "ASP114.A",
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE189.A",
+          "PHE389.A",
+          "PHE390.A",
+          "SER193.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TYR408.A",
+          "VAL91.A"
+        ],
+        "n_overlap": 13,
+        "jaccard": 0.7647058823529411,
+        "fi_only": [
+          "PHE110.A",
+          "TYR416.A"
+        ],
+        "shap_only": [
+          "PHE198.A",
+          "TRP413.A"
+        ]
+      },
+      "shap_vs_permutation": {
+        "shap_top": [
+          "ASP114.A",
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE189.A",
+          "PHE198.A",
+          "PHE389.A",
+          "PHE390.A",
+          "SER193.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TRP413.A",
+          "TYR408.A",
+          "VAL91.A"
+        ],
+        "permutation_top": [
+          "ASP114.A",
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE110.A",
+          "PHE189.A",
+          "PHE389.A",
+          "PHE390.A",
+          "SER193.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TRP413.A",
+          "TYR408.A",
+          "VAL91.A"
+        ],
+        "overlap": [
+          "ASP114.A",
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE189.A",
+          "PHE389.A",
+          "PHE390.A",
+          "SER193.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TRP413.A",
+          "TYR408.A",
+          "VAL91.A"
+        ],
+        "n_overlap": 14,
+        "jaccard": 0.875,
+        "shap_only": [
+          "PHE198.A"
+        ],
+        "permutation_only": [
+          "PHE110.A"
+        ]
+      },
+      "shap_vs_statistics": {
+        "ml_top": [
+          "ASP114.A",
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE189.A",
+          "PHE198.A",
+          "PHE389.A",
+          "PHE390.A",
+          "SER193.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TRP413.A",
+          "TYR408.A",
+          "VAL91.A"
+        ],
+        "stat_top": [
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE110.A",
+          "PHE189.A",
+          "PHE198.A",
+          "PHE389.A",
+          "SER409.A",
+          "THR119.A",
+          "THR412.A",
+          "TRP100.A",
+          "TRP413.A",
+          "TYR408.A",
+          "VAL111.A",
+          "VAL91.A"
+        ],
+        "overlap": [
+          "HIS393.A",
+          "ILE184.A",
+          "LEU94.A",
+          "PHE189.A",
+          "PHE198.A",
+          "PHE389.A",
+          "SER409.A",
+          "THR412.A",
+          "TRP100.A",
+          "TRP413.A",
+          "TYR408.A",
+          "VAL91.A"
+        ],
+        "n_overlap": 12,
+        "jaccard": 0.6666666666666666,
+        "ml_only": [
+          "ASP114.A",
+          "PHE390.A",
+          "SER193.A"
+        ],
+        "stat_only": [
+          "PHE110.A",
+          "THR119.A",
+          "VAL111.A"
+        ]
+      }
+    },
+    "d4": {
+      "best_model": "random_forest",
+      "cv_metrics": {
+        "random_forest": {
+          "accuracy": 0.6902235918956134,
+          "balanced_accuracy": 0.6705500425394589,
+          "f1": 0.7614387102287516,
+          "roc_auc": 0.7172267084237907
+        },
+        "logistic_l1": {
+          "accuracy": 0.6565449260157804,
+          "balanced_accuracy": 0.6419909933697119,
+          "f1": 0.7306185073987872,
+          "roc_auc": 0.6765536885459654
+        },
+        "xgboost": {
+          "accuracy": 0.6671125390684763,
+          "balanced_accuracy": 0.6565047600187761,
+          "f1": 0.738103598808989,
+          "roc_auc": 0.6890423895114971
+        }
+      },
+      "imbalance_strategy": "undersample",
+      "cv_stability": {
+        "top_n": 15,
+        "n_folds": 5,
+        "core_residues_in_all_folds": [
+          "ASP115.A",
+          "CYS185.A",
+          "HIS414.A",
+          "LEU111.A",
+          "LEU187.A",
+          "MET112.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "SER94.A",
+          "TRP101.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL193.A"
+        ],
+        "n_core_residues": 14,
+        "mean_pairwise_jaccard": 0.9125,
+        "min_pairwise_jaccard": 0.875,
+        "n_residues_in_all_folds": 14,
+        "hypothesis_supported": true
+      },
+      "fi_vs_shap": {
+        "fi_top": [
+          "ARG186.A",
+          "ASP115.A",
+          "CYS185.A",
+          "HIS414.A",
+          "LEU111.A",
+          "LEU187.A",
+          "MET112.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "SER94.A",
+          "THR434.A",
+          "TRP101.A",
+          "VAL116.A",
+          "VAL87.A"
+        ],
+        "shap_top": [
+          "ARG186.A",
+          "ASP115.A",
+          "CYS185.A",
+          "HIS414.A",
+          "LEU187.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "THR434.A",
+          "TRP101.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL430.A"
+        ],
+        "overlap": [
+          "ARG186.A",
+          "ASP115.A",
+          "CYS185.A",
+          "HIS414.A",
+          "LEU187.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "THR434.A",
+          "TRP101.A",
+          "VAL116.A"
+        ],
+        "n_overlap": 11,
+        "jaccard": 0.6470588235294118,
+        "fi_only": [
+          "LEU111.A",
+          "MET112.A",
+          "SER94.A",
+          "VAL87.A"
+        ],
+        "shap_only": [
+          "TYR438.A",
+          "VAL430.A"
+        ]
+      },
+      "shap_vs_permutation": {
+        "shap_top": [
+          "ARG186.A",
+          "ASP115.A",
+          "CYS185.A",
+          "HIS414.A",
+          "LEU187.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "THR434.A",
+          "TRP101.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL430.A"
+        ],
+        "permutation_top": [
+          "ARG186.A",
+          "ASP115.A",
+          "CYS185.A",
+          "GLU95.A",
+          "HIS414.A",
+          "LEU111.A",
+          "MET112.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "SER94.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL193.A",
+          "VAL430.A"
+        ],
+        "overlap": [
+          "ARG186.A",
+          "ASP115.A",
+          "CYS185.A",
+          "HIS414.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL430.A"
+        ],
+        "n_overlap": 10,
+        "jaccard": 0.5555555555555556,
+        "shap_only": [
+          "LEU187.A",
+          "THR434.A",
+          "TRP101.A"
+        ],
+        "permutation_only": [
+          "GLU95.A",
+          "LEU111.A",
+          "MET112.A",
+          "SER94.A",
+          "VAL193.A"
+        ]
+      },
+      "shap_vs_statistics": {
+        "ml_top": [
+          "ARG186.A",
+          "ASP115.A",
+          "CYS185.A",
+          "HIS414.A",
+          "LEU187.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "THR434.A",
+          "TRP101.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL430.A"
+        ],
+        "stat_top": [
+          "ARG186.A",
+          "ASP115.A",
+          "GLU95.A",
+          "GLY99.A",
+          "HIS414.A",
+          "LEU187.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "SER196.A",
+          "SER94.A",
+          "THR434.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL430.A"
+        ],
+        "overlap": [
+          "ARG186.A",
+          "ASP115.A",
+          "HIS414.A",
+          "LEU187.A",
+          "PHE410.A",
+          "PHE411.A",
+          "PHE91.A",
+          "THR434.A",
+          "TYR438.A",
+          "VAL116.A",
+          "VAL430.A"
+        ],
+        "n_overlap": 11,
+        "jaccard": 0.6470588235294118,
+        "ml_only": [
+          "CYS185.A",
+          "TRP101.A"
+        ],
+        "stat_only": [
+          "GLU95.A",
+          "GLY99.A",
+          "SER196.A",
+          "SER94.A"
+        ]
+      }
+    }
+  },
+  "homology": {
+    "ml": {
+      "d2_top_bw_positions": [
+        "3.28",
+        "3.32",
+        "4.60",
+        "5.43",
+        "5.47",
+        "5.62",
+        "6.48"
+      ],
+      "d4_top_bw_positions": [
+        "3.28",
+        "3.32",
+        "5.43",
+        "5.64"
+      ],
+      "shared_bw_positions": [
+        "3.28",
+        "3.32",
+        "5.43"
+      ],
+      "n_shared": 3,
+      "jaccard": 0.375
+    },
+    "statistics": {
+      "d2_top_bw_positions": [
+        "3.28",
+        "3.32",
+        "4.60",
+        "4.66",
+        "5.43",
+        "5.47",
+        "5.62",
+        "6.48"
+      ],
+      "d4_top_bw_positions": [
+        "3.28",
+        "3.32",
+        "4.67",
+        "5.43",
+        "5.64"
+      ],
+      "shared_bw_positions": [
+        "3.28",
+        "3.32",
+        "5.43"
+      ],
+      "n_shared": 3,
+      "jaccard": 0.3
+    }
+  }
+}

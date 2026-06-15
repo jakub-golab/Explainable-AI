@@ -1,0 +1,384 @@
+{
+  "d2": [
+    "presentation/figures/d2/d2_top15_feature_importance.png",
+    "presentation/figures/d2/d2_top15_shap.png",
+    "presentation/figures/d2/d2_top15_shap_vs_statistics.png",
+    "presentation/figures/d2/d2_top15_permutation.png",
+    "presentation/figures/d2/d2_feature_importance_residues.png",
+    "presentation/figures/d2/d2_shap_bar.png",
+    "presentation/figures/d2/d2_shap_beeswarm.png",
+    "presentation/figures/d2/d2_shap_residues.png",
+    "presentation/figures/d2/d2_fi_vs_shap_heatmap.png",
+    "presentation/figures/d2/d2_fi_vs_shap_scatter.png",
+    "presentation/figures/d2/d2_fi_vs_shap_presence.png",
+    "presentation/figures/d2/d2_fi_vs_shap_jaccard.png",
+    "presentation/figures/d2/d2_shap_vs_permutation_heatmap.png",
+    "presentation/figures/d2/d2_shap_vs_permutation_scatter.png",
+    "presentation/figures/d2/d2_shap_vs_permutation_presence.png",
+    "presentation/figures/d2/d2_shap_vs_permutation_jaccard.png",
+    "presentation/figures/d2/d2_permutation_residues.png",
+    "presentation/figures/d2/d2_shap_vs_statistics.png",
+    "presentation/figures/d2/d2_cv_stability.png"
+  ],
+  "d4": [
+    "presentation/figures/d4/d4_top15_feature_importance.png",
+    "presentation/figures/d4/d4_top15_shap.png",
+    "presentation/figures/d4/d4_top15_shap_vs_statistics.png",
+    "presentation/figures/d4/d4_top15_permutation.png",
+    "presentation/figures/d4/d4_feature_importance_residues.png",
+    "presentation/figures/d4/d4_shap_bar.png",
+    "presentation/figures/d4/d4_shap_beeswarm.png",
+    "presentation/figures/d4/d4_shap_residues.png",
+    "presentation/figures/d4/d4_fi_vs_shap_heatmap.png",
+    "presentation/figures/d4/d4_fi_vs_shap_scatter.png",
+    "presentation/figures/d4/d4_fi_vs_shap_presence.png",
+    "presentation/figures/d4/d4_fi_vs_shap_jaccard.png",
+    "presentation/figures/d4/d4_shap_vs_permutation_heatmap.png",
+    "presentation/figures/d4/d4_shap_vs_permutation_scatter.png",
+    "presentation/figures/d4/d4_shap_vs_permutation_presence.png",
+    "presentation/figures/d4/d4_shap_vs_permutation_jaccard.png",
+    "presentation/figures/d4/d4_permutation_residues.png",
+    "presentation/figures/d4/d4_shap_vs_statistics.png",
+    "presentation/figures/d4/d4_cv_stability.png"
+  ],
+  "cross": [
+    "presentation/figures/homology_d2_d4_paired.png",
+    "presentation/figures/homology_d2_d4_scatter.png"
+  ],
+  "fi_vs_shap": {
+    "d2": {
+      "fi_top": [
+        "ASP114.A",
+        "HIS393.A",
+        "ILE184.A",
+        "PHE110.A",
+        "PHE189.A",
+        "PHE389.A",
+        "SER193.A",
+        "SER409.A",
+        "THR412.A",
+        "TRP100.A",
+        "TYR408.A",
+        "TYR416.A",
+        "VAL91.A"
+      ],
+      "shap_top": [
+        "HIS393.A",
+        "ILE184.A",
+        "LEU94.A",
+        "PHE189.A",
+        "PHE389.A",
+        "PHE390.A",
+        "SER409.A",
+        "THR412.A",
+        "TRP100.A",
+        "TRP413.A",
+        "TYR408.A",
+        "VAL91.A"
+      ],
+      "overlap": [
+        "HIS393.A",
+        "ILE184.A",
+        "PHE189.A",
+        "PHE389.A",
+        "SER409.A",
+        "THR412.A",
+        "TRP100.A",
+        "TYR408.A",
+        "VAL91.A"
+      ],
+      "n_overlap": 9,
+      "jaccard": 0.5625,
+      "fi_only": [
+        "ASP114.A",
+        "PHE110.A",
+        "SER193.A",
+        "TYR416.A"
+      ],
+      "shap_only": [
+        "LEU94.A",
+        "PHE390.A",
+        "TRP413.A"
+      ],
+      "shap_vs_statistics_features": {
+        "primary_top": [
+          "HIS393.A.Hydrophobic",
+          "ILE184.A.VdWContact",
+          "LEU94.A.Hydrophobic",
+          "PHE189.A.Hydrophobic",
+          "PHE389.A.PiStacking",
+          "PHE389.A.VdWContact",
+          "PHE390.A.Hydrophobic",
+          "SER409.A.VdWContact",
+          "THR412.A.VdWContact",
+          "TRP100.A.VdWContact",
+          "TRP413.A.Hydrophobic",
+          "TYR408.A.Hydrophobic",
+          "TYR408.A.VdWContact",
+          "VAL91.A.Hydrophobic",
+          "VAL91.A.VdWContact"
+        ],
+        "secondary_top": [
+          "HIS393.A.Hydrophobic",
+          "ILE184.A.VdWContact",
+          "LEU94.A.Hydrophobic",
+          "PHE110.A.VdWContact",
+          "PHE189.A.Hydrophobic",
+          "PHE198.A.VdWContact",
+          "PHE389.A.PiStacking",
+          "SER409.A.VdWContact",
+          "THR412.A.VdWContact",
+          "TRP100.A.VdWContact",
+          "TRP413.A.Hydrophobic",
+          "TYR408.A.VdWContact",
+          "VAL111.A.VdWContact",
+          "VAL91.A.Hydrophobic",
+          "VAL91.A.VdWContact"
+        ],
+        "overlap": [
+          "HIS393.A.Hydrophobic",
+          "ILE184.A.VdWContact",
+          "LEU94.A.Hydrophobic",
+          "PHE189.A.Hydrophobic",
+          "PHE389.A.PiStacking",
+          "SER409.A.VdWContact",
+          "THR412.A.VdWContact",
+          "TRP100.A.VdWContact",
+          "TRP413.A.Hydrophobic",
+          "TYR408.A.VdWContact",
+          "VAL91.A.Hydrophobic",
+          "VAL91.A.VdWContact"
+        ],
+        "n_overlap": 12,
+        "jaccard": 0.6666666666666666,
+        "primary_only": [
+          "PHE389.A.VdWContact",
+          "PHE390.A.Hydrophobic",
+          "TYR408.A.Hydrophobic"
+        ],
+        "secondary_only": [
+          "PHE110.A.VdWContact",
+          "PHE198.A.VdWContact",
+          "VAL111.A.VdWContact"
+        ]
+      }
+    },
+    "d4": {
+      "fi_top": [
+        "ARG186.A",
+        "CYS185.A",
+        "HIS414.A",
+        "LEU111.A",
+        "LEU187.A",
+        "PHE410.A",
+        "PHE411.A",
+        "PHE91.A",
+        "SER94.A",
+        "THR434.A",
+        "TRP101.A"
+      ],
+      "shap_top": [
+        "ARG186.A",
+        "ASP115.A",
+        "HIS414.A",
+        "PHE410.A",
+        "PHE411.A",
+        "PHE91.A",
+        "THR434.A",
+        "TRP101.A",
+        "VAL116.A",
+        "VAL430.A"
+      ],
+      "overlap": [
+        "ARG186.A",
+        "HIS414.A",
+        "PHE410.A",
+        "PHE411.A",
+        "PHE91.A",
+        "THR434.A",
+        "TRP101.A"
+      ],
+      "n_overlap": 7,
+      "jaccard": 0.5,
+      "fi_only": [
+        "CYS185.A",
+        "LEU111.A",
+        "LEU187.A",
+        "SER94.A"
+      ],
+      "shap_only": [
+        "ASP115.A",
+        "VAL116.A",
+        "VAL430.A"
+      ],
+      "shap_vs_statistics_features": {
+        "primary_top": [
+          "ARG186.A.VdWContact",
+          "ASP115.A.HBDonor",
+          "ASP115.A.VdWContact",
+          "HIS414.A.Hydrophobic",
+          "HIS414.A.VdWContact",
+          "PHE410.A.Hydrophobic",
+          "PHE410.A.PiStacking",
+          "PHE410.A.VdWContact",
+          "PHE411.A.Hydrophobic",
+          "PHE91.A.PiStacking",
+          "PHE91.A.VdWContact",
+          "THR434.A.VdWContact",
+          "TRP101.A.Hydrophobic",
+          "VAL116.A.Hydrophobic",
+          "VAL430.A.VdWContact"
+        ],
+        "secondary_top": [
+          "ARG186.A.VdWContact",
+          "ASP115.A.VdWContact",
+          "GLU95.A.VdWContact",
+          "GLY99.A.VdWContact",
+          "HIS414.A.Hydrophobic",
+          "LEU187.A.VdWContact",
+          "PHE410.A.Hydrophobic",
+          "PHE410.A.PiStacking",
+          "PHE410.A.VdWContact",
+          "PHE411.A.Hydrophobic",
+          "PHE91.A.VdWContact",
+          "SER94.A.VdWContact",
+          "THR434.A.VdWContact",
+          "VAL116.A.Hydrophobic",
+          "VAL430.A.VdWContact"
+        ],
+        "overlap": [
+          "ARG186.A.VdWContact",
+          "ASP115.A.VdWContact",
+          "HIS414.A.Hydrophobic",
+          "PHE410.A.Hydrophobic",
+          "PHE410.A.PiStacking",
+          "PHE410.A.VdWContact",
+          "PHE411.A.Hydrophobic",
+          "PHE91.A.VdWContact",
+          "THR434.A.VdWContact",
+          "VAL116.A.Hydrophobic",
+          "VAL430.A.VdWContact"
+        ],
+        "n_overlap": 11,
+        "jaccard": 0.5789473684210527,
+        "primary_only": [
+          "ASP115.A.HBDonor",
+          "HIS414.A.VdWContact",
+          "PHE91.A.PiStacking",
+          "TRP101.A.Hydrophobic"
+        ],
+        "secondary_only": [
+          "GLU95.A.VdWContact",
+          "GLY99.A.VdWContact",
+          "LEU187.A.VdWContact",
+          "SER94.A.VdWContact"
+        ]
+      }
+    }
+  },
+  "shap_vs_permutation": {
+    "d2": {
+      "shap_top": [
+        "HIS393.A",
+        "ILE184.A",
+        "LEU94.A",
+        "PHE189.A",
+        "PHE389.A",
+        "PHE390.A",
+        "SER409.A",
+        "THR412.A",
+        "TRP100.A",
+        "TRP413.A",
+        "TYR408.A",
+        "VAL91.A"
+      ],
+      "permutation_top": [
+        "ASP114.A",
+        "HIS393.A",
+        "ILE184.A",
+        "LEU94.A",
+        "PHE189.A",
+        "PHE389.A",
+        "SER193.A",
+        "THR412.A",
+        "TRP100.A",
+        "TRP413.A",
+        "TYR408.A",
+        "VAL91.A"
+      ],
+      "overlap": [
+        "HIS393.A",
+        "ILE184.A",
+        "LEU94.A",
+        "PHE189.A",
+        "PHE389.A",
+        "THR412.A",
+        "TRP100.A",
+        "TRP413.A",
+        "TYR408.A",
+        "VAL91.A"
+      ],
+      "n_overlap": 10,
+      "jaccard": 0.7142857142857143,
+      "shap_only": [
+        "PHE390.A",
+        "SER409.A"
+      ],
+      "permutation_only": [
+        "ASP114.A",
+        "SER193.A"
+      ]
+    },
+    "d4": {
+      "shap_top": [
+        "ARG186.A",
+        "ASP115.A",
+        "HIS414.A",
+        "PHE410.A",
+        "PHE411.A",
+        "PHE91.A",
+        "THR434.A",
+        "TRP101.A",
+        "VAL116.A",
+        "VAL430.A"
+      ],
+      "permutation_top": [
+        "ARG186.A",
+        "ASP115.A",
+        "GLU95.A",
+        "HIS414.A",
+        "LEU111.A",
+        "MET112.A",
+        "PHE410.A",
+        "PHE411.A",
+        "PHE91.A",
+        "TYR438.A",
+        "VAL193.A",
+        "VAL430.A"
+      ],
+      "overlap": [
+        "ARG186.A",
+        "ASP115.A",
+        "HIS414.A",
+        "PHE410.A",
+        "PHE411.A",
+        "PHE91.A",
+        "VAL430.A"
+      ],
+      "n_overlap": 7,
+      "jaccard": 0.4666666666666667,
+      "shap_only": [
+        "THR434.A",
+        "TRP101.A",
+        "VAL116.A"
+      ],
+      "permutation_only": [
+        "GLU95.A",
+        "LEU111.A",
+        "MET112.A",
+        "TYR438.A",
+        "VAL193.A"
+      ]
+    }
+  }
+}
